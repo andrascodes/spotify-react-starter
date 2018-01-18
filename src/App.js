@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import { Login } from './components'
+import { Login, SpotifyPlayer } from './components'
 
 import { Spotify } from './lib'
 
@@ -59,7 +59,10 @@ class App extends Component {
       }
       else {
         return (
-          <div>Logged in with {state.accessToken}</div>
+          <div>
+            <p>Logged in with {state.accessToken}</p>
+            <SpotifyPlayer accessToken={state.accessToken}/>
+          </div>
         )
       }
     }

@@ -1,2 +1,2 @@
-export { default as SpotifySDK } from './SpotifySDK';
+export { default as SpotifyPlayer } from './SpotifyPlayer';
 export { default as Login } from './Login';
